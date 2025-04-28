@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste css</title>
+</head>
+<body>
+
+
+<H1> Teste de CSS style <H1>
+
+    <style>
+        H1 {
+        color: blue;
+        font-size: 35px;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+    
+    <style>
+        .flicker {
+            font-size: 48px;
+            color: white;
+            text-shadow: 0 0 5px #2e0d2ebc, 0 0 10px #ff00ff, 
+            0 0 20px #ff00ff;
+            animation: flickerEffect 3s infinite;
+        }
+        @keyframes flickerEffect {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+                opacity: 1;
+            }
+            20%, 24%, 55% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <h1 class="flicker">TESTE NEON</h1>
+
+    <style>
+        .arcoiris {
+            font-size: 50px;
+            font-weight: bold;
+            background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: arcoiris 8s ease infinite;
+        }
+        @keyframes arcoiris {
+            0% { background-position: 0% 50%; }
+            50% {background-position: 100% 50%; }
+            100% {background-position: 0% 50%; }
+        
+        }
+    </style>
+
+    <h1 class="arcoiris"> Teste de Arco-Íris Fluindo em teoria né</h1>
+</body>
+</html>
